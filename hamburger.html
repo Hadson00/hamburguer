@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.js"></script>
+    <style>
+        .title{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .l{
+            list-style: none;
+        }
+        .frase{
+            background-color: orange;
+        }
+        .h1{
+            font-size: 30px;
+        }
+        .h1 > b{
+            font-size: 38px;
+        }
+        .f{
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+        html{
+            overflow-x: hidden;
+        }
+        .align{
+            align-items: center;
+        }
+        .m{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .w{
+            width: 100vw;
+            height: 100vh;
+        }
+        .img{
+            object-fit: cover;
+        }
+        @media screen and (max-width: 600px) {
+            .row{
+                margin-right: 0;
+            }
+            .w{
+                height: auto;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid px-5">
+        <img src="assets/img/hamburguer.png" alt="hamburgericon" width="60px" height="60px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item px-5">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item px-5">
+                <a class="nav-link" href="#car">Cardápio</a>
+            </li>
+            <li class="nav-item px-5">
+                <a class="nav-link" href="#prom">Promoções</a>
+            </li>
+            <li class="nav-item px-5">
+                <a class="nav-link" href="#sobre">Sobre Nós</a>
+            </li>
+            <li class="nav-item px-5">
+                <a class="nav-link" href="#fale">Fale Conosco</a>
+            </li>
+            </ul>
+            <form class=" d-flex" role="search">
+            <input class="form-control me-5" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+            </form>
+        </div>
+        </div>
+    </nav>
+    <!--Carousel-->
+    <div>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active w">
+                <img src="assets/img/bur.jpg" class="d-block w-100" alt="burger">
+            </div>
+            <div class="carousel-item w">
+                <img src="assets/img/cq.jpg" class="d-block w-100" alt="hotdog">
+            </div>
+            <div class="carousel-item w">
+                <img src="assets/img/juice.jpg" class="d-block w-100" alt="juice">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!--Promo-->
+    <div>
+        <div class="title py-1">
+            <h1>Promoções</h1>
+        </div>
+        <div class="container text-center py-5">
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-sm-12 d-flex justify-content-center py-2">
+                    <div class="card d-flex col-xxl-3 col-sm-12" style="width: 18rem;">
+                        <img src="assets/img/bur.jpg" class="card-img-top img" alt="bur" width="100%" height="100%">
+                        <div class="card-body">
+                            <h5 class="card-title">Hamburguer Artesanal</h5>
+                        </div>
+                        <ul class="list-group list-group-flush l">
+                            <li class="list-group-item">De R$25,00</li>
+                            <li class="list-group-item">Por R$19,50<li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-sm-12 d-flex justify-content-center py-2">
+                    <div class="card d-flex col-xxl-3 col-sm-12" style="width: 18rem;"> 
+                        <img src="assets/img/suco.jpg" class="card-img-top img" alt="bur" width="100%" height="200vh">
+                        <div class="card-body">
+                            <h5 class="card-title">Suco de Laranja Natural</h5>
+                        </div>
+                        <ul class="list-group list-group-flush l">
+                            <li class="list-group-item">De R$5,00</li>
+                            <li class="list-group-item">Por R$3,00<li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-sm-12 d-flex justify-content-center py-2">
+                    <div class="card d-flex col-xxl-3 col-sm-12" style="width: 18rem;">
+                        <img src="assets/img/hot.jpg" class="card-img-top img" alt="bur" width="100%" height="100%">
+                        <div class="card-body">
+                            <h5 class="card-title">Cachorro Quente</h5>
+                        </div>
+                        <ul class="list-group list-group-flush l">
+                            <li class="list-group-item">De R$16,00</li>
+                            <li class="list-group-item">Por R$13,50<li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-sm-12 d-flex justify-content-center py-2">
+                    <div class="card d-flex col-xxl-3 col-sm-12" style="width: 18rem;">
+                        <img src="assets/img/fries.jpg" class="card-img-top img" alt="bur" width="100%" height="200vh">
+                        <div class="card-body">
+                            <h5 class="card-title">Batata Frita</h5>
+                        </div>
+                        <ul class="list-group list-group-flush l">
+                            <li class="list-group-item">De R$20,00</li>
+                            <li class="list-group-item">Por R$17,50<li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Cardápio-->
+    <div id="car">
+        <div class="title py-1">
+            <h1>Cardápio</h1>
+        </div>
+        <div class="py-5">
+            <div class="text-center">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 col-sm-12 d-flex justify-content-center py-2">
+                        <div class="card d-flex col-xxl-3 col-sm-12" style="width: 18rem;">
+                            <img src="assets/img/hotfries.jpg" class="card-img-top img" alt="bur" width="100%" height="200vh">
+                            <div class="card-body">
+                            <h5 class="card-title">Combo Cachorro Quente e Batata Frita</h5>
+                            </div>
+                            <ul class="list-group list-group-flush l">
+                                <li class="list-group-item">R$16,50</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 d-flex justify-content-center py-2">
+                        <div class="card d-flex col-xxl-3 col-sm-12" style="width: 18rem;">
+                            <img src="assets/img/misto.jpeg" class="card-img-top img" alt="bur" width="100%" height="200vh">
+                            <div class="card-body">
+                            <h5 class="card-title">Misto Quente</h5>
+                            </div>
+                            <ul class="list-group list-group-flush l">
+                            <li class="list-group-item">R$7,50</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 d-flex justify-content-center py-2">
+                        <div class="card d-flex col-xxl-3 col-sm-12" style="width: 18rem;">
+                            <img src="assets/img/egg.jpg" class="card-img-top img" alt="bur" width="100%" height="200vh">
+                            <div class="card-body">
+                            <h5 class="card-title">X-Egg</h5>
+                            </div>
+                            <ul class="list-group list-group-flush l">
+                                <li class="list-group-item">R$12,00</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 d-flex justify-content-center py-2">
+                        <div class="card d-flex col-xxl-3 col-sm-12" style="width: 18rem;">
+                            <img src="assets/img/frango.png" class="card-img-top img" alt="bur" width="100%" height="200vh">
+                            <div class="card-body">
+                            <h5 class="card-title">X-Frango</h5>
+                            </div>
+                            <ul class="list-group list-group-flush l">
+                                <li class="list-group-item">R$18,00</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 col-sm-12 d-flex justify-content-center py-2">
+                        <div class="card d-flex col-xxl-3 col-sm-12" style="width: 18rem;">
+                            <img src="assets/img/ham2.jpg" class="card-img-top img" alt="bur" width="100%" height="200vh">
+                            <div class="card-body">
+                            <h5 class="card-title">X-Presunto</h5>
+                            </div>
+                            <ul class="list-group list-group-flush l">
+                                <li class="list-group-item">R$13,00</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 d-flex justify-content-center py-2">
+                        <div class="card d-flex col-xxl-3 col-sm-12" style="width: 18rem;">
+                            <img src="assets/img/hamb.jpg" class="card-img-top img" alt="bur" width="100%" height="200vh">
+                            <div class="card-body">
+                            <h5 class="card-title">Hamburguer</h5>
+                            </div>
+                            <ul class="list-group list-group-flush l">
+                            <li class="list-group-item">R$11,00</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 d-flex justify-content-center py-2">
+                        <div class="card d-flex col-xxl-3 col-sm-12" style="width: 18rem;">
+                            <img src="assets/img/cq2.jpeg" class="card-img-top img" alt="bur" width="100%" height="200vh">
+                            <div class="card-body">
+                            <h5 class="card-title">Cachorro Quente Especial</h5>
+                            </div>
+                            <ul class="list-group list-group-flush l">
+                                <li class="list-group-item">R$20,00</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 d-flex justify-content-center py-2">
+                        <div class="card d-flex col-xxl-3 col-sm-12" style="width: 18rem;">
+                            <img src="assets/img/dacasa.jpg" class="card-img-top img" alt="bur" width="100%" height="200vh">
+                            <div class="card-body">
+                            <h5 class="card-title">Hamburguer Da Casa</h5>
+                            </div>
+                            <ul class="list-group list-group-flush l">
+                                <li class="list-group-item">R$45,00</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Frase-->
+    <div id="sobre" class="frase row align py-3">
+        <div class="col-xl-3 col-sm-12 m">
+            <img class="img" src="assets/img/frase.jpg" alt="frase" width="100%" height="300px">
+        </div>
+        <div class="col-xl-6 col-sm-12">
+            <h1 class="h1">
+                Papa's Hamburgueria<br>
+                <b>Conheça Nossa História</b>
+            </h1>
+            <p>
+                Tudo começou com o idealizador Hadson Nepomuceno que entre suas viagens e experiências gastronômicas reunia os amigos Maria Rita, 
+                Raphael e Rogério para as hamburgadas aos finais de semana.<br>
+                Entre encontros e outras hamburgadas, o sonho de empreender começou a tomar forma e finalmente em 2015 os amigos 
+                resolveram investir na primeira unidade localizada em Descoberto-MG, surgindo assim a Hamburgueria Papa's Hamburgueria.<br>
+                Acreditando na continuidade do sucesso da marca, a segunda loja é inaugurada ainda no primeiro semestre de 2015 e, em seguida se espalhou por todo estado de Minas Gerais.
+                Devido ao projeto de expansão executado em todo território nacional, a Hamburgueria Papa's Hamburgueria possui atualmente 17<br>
+                unidades em seis estados brasileiros com uma marca consolidada devido a excelência e a qualidade dos produtos e serviços.
+            </p>
+        </div>
+    </div>
+    <!--Email-->
+    <div id="fale">
+        <div class="title py-1">
+            <h1>Fale Conosco</h1>
+        </div>
+        <div class="container py-5">
+            <div class="mb-3">
+                <label style="font-size: 20px;" for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label style="font-size: 20px;" for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary btn-lg">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="f">
+        &copycopyright - Todos os direitos reservados
+    </footer>
+</body>
+</html>
